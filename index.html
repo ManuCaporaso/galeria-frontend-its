@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.P 2 -Galeria Imagenes con flexbox- Programacion Frontend</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 class="gallery-title">Galeria de Imagenes de Aves en la Naturaleza</h1>
+    </header>
+    <main>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2024/02/17/15/14/birds-8579528_1280.jpg" alt="Imagen 1" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="Imagen 2" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2023/04/11/13/27/bird-7917250_1280.jpg" alt="Imagen 3" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/12/14/owl-1834152_1280.jpg" alt="Imagen 4" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2023/01/23/17/38/seagull-7739257_1280.jpg" alt="Imagen 5" onclick="openModal(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.pixabay.com/photo/2023/10/12/08/24/bird-8310183_1280.png" alt="Imagen 6" onclick="openModal(this)">
+            </div>
+        </div>
+    
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    
+        <script src="./assets/script/script.js"></script>
+        
+
+    </main>
+    <footer>
+        <h2>Trabajo realizado por Manuel Caporaso</h2>
+    </footer>
+    
+</body>
+</html>
